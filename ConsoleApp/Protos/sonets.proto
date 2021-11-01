@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+option csharp_namespace = "gRPC_v15";
+
+package sonets;
+
+service Sonets {
+  rpc GetSonets (Request) returns (Reply);
+}
+
+message Request {
+  int32 requestMessage = 1;
+}
+
+message Reply {
+  string replyMessage = 1;
+}
