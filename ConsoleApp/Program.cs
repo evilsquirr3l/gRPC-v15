@@ -20,7 +20,7 @@ namespace ConsoleApp
             while (true)
             {
                 Console.Write("Нажмите что-нибудь, чтобы ознакомиться с сонетами Шекспира: ");
-                var message = Convert.ToInt32(Console.ReadLine());
+                var message = Console.ReadLine();
             
                 // обмениваемся сообщениями с сервером
                 var reply = await client.GetSonetsAsync(new Request {RequestMessage = message});

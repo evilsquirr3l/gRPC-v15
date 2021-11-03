@@ -9,7 +9,7 @@ service Sonets {
 }
 
 message Request {
-  int32 requestMessage = 1;
+  string requestMessage = 1;
 }
 
 message Reply {
